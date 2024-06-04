@@ -1,4 +1,6 @@
 import { addHomeDiv } from "./home.js"
+import { about } from "./about.js"
+import { menu } from "./menu.js"
 console.log('Hello')
 
 
@@ -20,13 +22,13 @@ buttons.forEach(button=>{
     button.addEventListener("click", ()=>{
         console.log(button.innerText)
         if(button.innerText==='Home'){
-            console.log('clicked home')
+            div.innerText = addHomeDiv()
         }
         if(button.innerText==='Menu'){
-            console.log('clicked menu')
+            div.innerText = menu()
         }
         if(button.innerText==='About'){
-            console.log('clicked about')
+            div.innerText = about()
         }
     })
 })
