@@ -3,6 +3,18 @@ body{
     justify-content: center;
     align-items: center;
     color: rgb(171, 158, 158);
+    }
+.backgroundImage{
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0.2;
+}
+.bodyContent{
+    
+    left: 35%;
+    position: absolute;
+
 }
 
 .restaurantName {
