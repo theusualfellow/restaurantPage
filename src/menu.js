@@ -1,3 +1,15 @@
 export function menu(){
-    return `this is our menu page`
+
+    function image(){
+        const newImage = document.createElement("img")
+        newImage.src = '../chefs.jpg'
+        return newImage
+    }
+    
+
+    function text(){
+        return `home`
+    }
+
+    return {image, text}
 }
