@@ -12,9 +12,8 @@ const buttons = document.querySelectorAll('button')
 
 const div = document.querySelector('#content')
 
-const words = `Welcome to Alfredo Restaurant`
 function pageLoad(){
-    div.append(words)
+    div.append(addHomeDiv())
 }
 pageLoad()
 
@@ -25,7 +24,8 @@ buttons.forEach(button=>{
             div.innerText = addHomeDiv()
         }
         if(button.innerText==='Menu'){
-            div.innerText = menu()
+            div.appendChild(menu().image())
+            div.appendChild = menu().text()
         }
         if(button.innerText==='About'){
             div.innerText = about()
