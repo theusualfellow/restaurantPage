@@ -20,15 +20,17 @@ pageLoad()
 buttons.forEach(button=>{
     button.addEventListener("click", ()=>{
         console.log(button.innerText)
+        div.innerHTML = ''
         if(button.innerText==='Home'){
             div.innerText = addHomeDiv()
         }
-        if(button.innerText==='Menu'){
-            div.appendChild(menu().image())
-            div.appendChild = menu().text()
-        }
         if(button.innerText==='About'){
-            div.innerText = about()
+            const aboutContent = about()
+            div.appendChild(aboutContent.image())
+            div.appendChild(aboutContent.text())
+        }
+        if(button.innerText==='Menu'){
+            div.innerText = menu()
         }
     })
 })
