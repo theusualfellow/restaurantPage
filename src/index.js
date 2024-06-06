@@ -26,11 +26,20 @@ buttons.forEach(button=>{
         }
         if(button.innerText==='About'){
             const aboutContent = about()
+            div.appendChild(aboutContent.heading())
             div.appendChild(aboutContent.image())
             div.appendChild(aboutContent.text())
         }
         if(button.innerText==='Menu'){
-            div.innerText = menu()
+            const dishes = menu()
+            div.appendChild(dishes.text()[0])
+            div.appendChild(dishes.images[0])
+
+            div.appendChild(dishes.text()[1])
+            div.appendChild(dishes.images[1])  
+
+            div.appendChild(dishes.text()[2])
+            div.appendChild(dishes.images[2])
         }
     })
 })
