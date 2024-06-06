@@ -1,4 +1,10 @@
 export function about(){
+    function heading(){
+        const chefsHeading = document.createElement('h1')
+        chefsHeading.innerText = 'Meet the chefs'
+        return chefsHeading
+    }
+
     function image(){
         const newImage = document.createElement("img")
         newImage.src = '../chefs.jpg'
@@ -10,9 +16,11 @@ export function about(){
 
     function text(){
         const someText = document.createElement('p')
-        someText.innerText = 'hello'
+        someText.innerText = `Alan the Alchemist and Freddie Gibbs together are unstoppable
+        when it comes to cook great food. They joined forces and has made Alfredo to what it 
+        is today. It's their hard work and dedication that made Alfredo the sensation it is today`
         return someText
     }
 
-    return {image, text}
+    return {image, text, heading}
 }
